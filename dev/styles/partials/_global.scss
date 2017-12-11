@@ -1,7 +1,51 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav a, label {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .overWrapper {
     max-width: 100%;
 }
 
 .wrapper {
     width: 70%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    font-size: 5rem;
+    margin: 0;
+    padding: 40px;
+}
+
+ul {
+    padding: 0;
+}
+
+@media (max-width: 615px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+@media (max-width: 320px) {
+    h2 {
+        font-size: 4rem;
+    }
 }

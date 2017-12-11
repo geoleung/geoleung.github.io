@@ -4,85 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Geoffrey Leung</title>
+    <link rel="icon" href="public/assets/logo.png">
+    <script src="https://use.fontawesome.com/6fbf8e485c.js"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Poppins" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="public/styles/style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="navLinks">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <label for="toggle"><i class="fa fa-bars"></i></label>
+        <input type="checkbox" id="toggle" name="toggle">
+        <ul class="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
     <main class="overWrapper">
-        <div class="wrapper">
+        <div class="welcome wrapper" id="home">
             <h1>Geoffrey Leung</h1>
-            <p>Some things about me that will be filled in soon.</p>
+            <h4>Web Developer</h4>
         </div>
     </main>
-    <section class="skills">
+    <section class="about overWrapper" id="about">
+        <div class="wrapper">
+            <h2>About Me</h2>
+            <div class="aboutContent">
+                <div class="headshot">
+                    <img src="public/assets/profile1.jpg" alt="">
+                </div>
+                <p>Who I am and what I do. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo porro sapiente fuga praesentium eveniet saepe, eos corrupti explicabo minima ullam ea soluta earum officia quos vel odio quas velit natus voluptatem maxime similique, doloribus reprehenderit quam corporis! Et ipsam, voluptas vitae est rerum illo possimus ut nostrum ipsa veritatis earum!</p>
+            </div>
+        </div>
+    </section>
+    <section class="skills overWrapper" id="skills">
         <div class="wrapper">
             <h2>My Skills</h2>
             <p>Some of my competencies</p>
             <ul class="skillsList">
-                <li><img src="public/assets/javascript.svg" alt=""></li>
-                <li><img src="public/assets/jquery.svg" alt=""></li>
-                <li><img src="public/assets/react.svg" alt=""></li>
-                <li><img src="public/assets/html5.svg" alt=""></li>
-                <li><img src="public/assets/css3.svg" alt=""></li>
-                <li><img src="public/assets/sass.svg" alt=""></li>
-                <li><img src="public/assets/git.svg" alt=""></li>
-                <li><img src="public/assets/github.svg" alt=""></li>
+                <li><h2><i class="devicon-javascript-plain"></i></h2></li>
+                <li><h2><i class="devicon-react-original-wordmark"></i></h2></li>
+                <li><h2><i class="devicon-html5-plain-wordmark"></i></h2></li>
+                <li><h2><i class="devicon-css3-plain-wordmark"></i></h2></li>
+                <li><h2><i class="devicon-jquery-plain-wordmark"></i></h2></li>
+                <li><h2><i class="devicon-sass-original"></i></h2></li>
+                <li><h2><i class="devicon-gulp-plain"></i></h2></li>
+                <li><h2><i class="devicon-github-plain-wordmark"></i></h2></li>
             </ul>
         </div>
     </section>
-    <section class="works">
+    <section class="works overWrapper" id="portfolio">
         <div class="wrapper">
             <h2>My Projects</h2>
-            <ul>
+            <ul class="portfolioItems">
                 <li>
-                    <h4>Project 1</h4>
-                    <p>Description</p>
+                    <div class="imageContainer">
+                        <img src="public/assets/randomize-mockup1.png" alt="">
+                    </div>
+                    <div class="itemDescription">
+                        <h4>Decision Maker</h4>
+                        <p>A decision maker app, because who carries around coins to flip anymore? Made using JavaScript and JQuery</p>
+                        <a href="">View Project</a>
+                    </div>
                 </li>
                 <li>
-                    <h4>Project 2</h4>
-                    <p>Description</p>
-                </li>
+                    <div class="imageContainer">
+                        <img src="public/assets/discover-mockup1.png" alt="">
+                    </div>
+                    <div class="itemDescription">
+                        <h4>Discover Events</h4>
+                        <p>Utilizing Ticketmaster's Discovery API, generates a list of upcoming events based on the user's specified location and date. Created with JavaScript and JQuery.</p>
+                        <a href="">View Project</a>
+                    </div>
+                    </li>
                 <li>
-                    <h4>Project 3</h4>
-                    <p>Description</p>
+                    <div class="imageContainer">
+                        <img src="public/assets/slice-finder-mockup1.png" alt="">
+                    </div>
+                    <div class="itemDescription">
+                        <h4>Slice Finder</h4>
+                        <p>Drawing from Yelp's Fusion API, this app finds the top pizza restaurants in the user's specified location that serve by the slice. Made in React.</p>
+                        <a href="http://geoffreyleung.com/project6">View Project</a>
+                    </div>
                 </li>
             </ul>
         </div>
     </section>
-    <section class="contact">
-        <div class="wrapper">
+    <section class="contact overWrapper" id="contact">
+        <div class="contactContent wrapper">
             <h2>Contact Me</h2>
-            <form action="">
-                <label for="name">Name:</label>
-                <input type="text" id="name">
-                <label for="email">Email:</label>
-                <input type="text" id="email">
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject">
-                <label for="message">Message:</label>
-                <textarea name="" id="message" cols="30" rows="10"></textarea>
-            </form>
-        </div>
+                <form action="http://www.geoffreyleung.com/geoff@geoffreyleung.com" method="POST">
+                    <div class="formItem">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="formItem">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" name="_replyto">
+                    </div>
+                    <div class="formItem">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject">
+                    </div>
+                    <div class="formItem">
+                        <label for="message">Message:</label>
+                        <textarea name="messageContent" id="message" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            <h4><i class="fa fa-envelope"></i> Email</h4>
+            <p>geoff@geoffreyleung.com</p>
     </section>
-    <footer>
+    <footer class="overWrapper">
         <div class="wrapper">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+            <ul class="socialLinks">
+                <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa fa-github"></i></a></li>
             </ul>
+            <p class="copyText">Design template by ThemeEggs on ThemeForest.</p>
         </div>
     </footer>
-    <script src="public/scripts/app.js"></script>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+    <script src='public/scripts/app.js'></script>
 </body>
 </html>

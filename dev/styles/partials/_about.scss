@@ -1,0 +1,37 @@
+.about {
+    background: #F5F5F5;
+}
+
+.aboutContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headshot {
+    width: 25%;
+}
+
+.headshot img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.aboutContent p {
+    width: 70%;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 670px) {
+    .aboutContent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headshot {
+        width: 50%;
+    }
+
+    .aboutContent p {
+        text-align: justify;
+    }
+}

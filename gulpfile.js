@@ -23,7 +23,7 @@ gulp.task('js', () => {
 	return browserify('dev/scripts/app.js', {debug: true})
 		.transform('babelify', {
 			sourceMaps: true,
-			presets: ['es2015','react']
+			presets: ['es2015']
 		})
 		.bundle()
 		.on('error',notify.onError({
@@ -32,7 +32,7 @@ gulp.task('js', () => {
 		}))
 		.pipe(source('app.js'))
 		.pipe(buffer())
-		.pipe(gulp.dest('public/scripts'))
+		.pipe(gulp.dest('./public/scripts'))
 		.pipe(reload({stream:true}));
 });
 

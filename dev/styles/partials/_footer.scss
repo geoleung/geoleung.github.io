@@ -1,0 +1,39 @@
+footer {
+    background: #000;
+    padding: 50px 0;
+}
+
+.socialLinks {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 20%;
+}
+
+.socialLinks li a {
+    background: grey;
+    padding: 20px 12px 12px 12px;
+    border-radius: 50%;
+}
+
+.fa-twitter, .fa-linkedin, .fa-github {
+    font-size: 2.2rem;
+    color: #FFF;
+}
+
+.copyText {
+    color: #FFF;
+    margin: 25px 0 20px 0;
+    text-align: center;
+}
+
+.copyText {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1035px) {
+    .socialLinks {
+        width: 50%;
+    }
+}

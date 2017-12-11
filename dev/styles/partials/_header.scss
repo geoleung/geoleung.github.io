@@ -1,3 +1,19 @@
-header {
-    background: orange;
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(/public/assets/background-top.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.welcome h4 {
+    color: #666;
+    font-size: 2.2rem;
 }
