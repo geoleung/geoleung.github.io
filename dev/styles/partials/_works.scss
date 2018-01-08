@@ -2,15 +2,21 @@
     list-style: none;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .portfolioItems li {
-    width: calc(30% - 10px);
+    width: calc(45% - 10px);
     margin: 10px;
 }
 
+.imageContainer {
+    display: flex;
+    justify-content: center;
+}
+
 .imageContainer img {
-    max-width: 400px;
+    max-width: auto;
     max-height: 400px;
 }
 
@@ -22,6 +28,22 @@
 .itemDescription h4 {
     color: #333;
     font-size: 2rem;
+    text-align: center;
+}
+
+.tools {
+    font-style: initial;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tools span {
+    font-style: italic;
+}
+
+.tools span:hover {
+    color: orange;
 }
 
 .itemDescription p {
@@ -34,12 +56,24 @@
     font-size: 1.5rem;
     padding: 10px;
     color: #000;
-    border: 3px solid #000;
+    font-weight: bold;
+    background: orange;
+    box-shadow: 0 3px 10px 0;
     align-self: center;
+    border-radius: 20px;
+}
+
+.itemDescription a:hover {
+    background: rgba(255,165,0,0.8);
+}
+
+.itemDescription a:active {
+    box-shadow: 0 3px 5px 0;
+    transform: translateY(3px);
 }
 
 
-@media (max-width: 1600px) {
+@media (max-width: 1690px) {
     .portfolioItems {
         flex-direction: column;
     }
@@ -47,29 +81,82 @@
     .portfolioItems li {
         width: auto;
         display: flex;
+        justify-content: space-between;
         margin: 30px 0;
     }
 
-    // .itemDescription {
-    //     display: flex;
-    //     flex-direction: column;
-    // }
+    .imageContainer {
+        display: block;
+    }
+
+    .imageContainer img {
+        max-width: 400px;
+    }
+
+    .itemDescription {
+        width: 60%;
+    }
 
     .itemDescription h4 {
         margin-bottom: 0;
+        text-align: left;
     }
+
+    // .tools {
+    //     justify-content: space-around;
+    // }
 
     .itemDescription a {
         align-self: flex-start;
     }
 }
 
-@media(max-width: 835px) {
+@media (max-width: 1160px) {
+    .itemDescription {
+        width: auto;
+    }
     .portfolioItems li {
         flex-direction: column;
     }
 
+    .imageContainer {
+        margin: 0 auto;
+    }
+
+    .itemDescription {
+        padding: 20px;
+    }
+
+    .tools {
+        justify-content: space-around;
+        
+    }
+
     .itemDescription a {
+        align-self: center;
+    }
+}
+
+// @media (max-width: 835px) {
+//     .portfolioItems li {
+//         flex-direction: column;
+//     }
+
+//     .imageContainer {
+//         margin: 0 auto;
+//     }
+
+//     .itemDescription {
+//         padding: 10px;
+//     }
+
+//     .itemDescription a {
+//         align-self: center;
+//     }
+// }
+
+@media (max-width: 670) {
+    .imageContainer {
         align-self: center;
     }
 }

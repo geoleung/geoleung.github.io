@@ -30,12 +30,12 @@ label {
     padding-bottom: 5px;
 }
 
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
     border-radius: 5px;
     font-size: 1.8rem;
 }
 
-input[type=text] {
+input[type=text], input[type=email] {
     border: none;
 }
 
@@ -52,26 +52,40 @@ input[type=submit] {
     font-size: 1.5rem;
     font-weight: bold;
     border: none;
-    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px 0 rgba(200,200,200,0.5);
     border-radius: 50px;
     padding: 20px 40px;
     text-transform: uppercase;
     color: #000;
     background: orange;
+    outline: none;
+}
+
+input[type=submit]:hover {
+    background: rgba(255,165,0,0.7);
+}
+
+input[type=submit]:active {
+    box-shadow: 0 1px 2px 0 rgba(200,200,200,0.5);
+    transform: translateY(3px);
+}
+
+.contactEmail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact h4 {
     color: #FFF;
     margin: 0;
-    text-align: center;
     font-size: 2rem;
 }
 
-.contact p {
+.contact a {
     color: #CCC;
     font-size: 1.8rem;
-    text-align: center;
-    margin: 0;
+    text-decoration: none;
 }
 
 @media (max-width: 1300px) {

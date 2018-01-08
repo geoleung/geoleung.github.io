@@ -14,7 +14,7 @@
 <body>
     <nav>
         <label for="toggle"><i class="fa fa-bars"></i></label>
-        <input type="checkbox" id="toggle" name="toggle">
+        <input type="checkbox" id="toggle" name="toggle" val="">
         <ul class="navLinks">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -24,7 +24,10 @@
         </ul>
     </nav>
     <main class="overWrapper">
-        <div class="welcome wrapper" id="home">
+        <div class="logoImage" id="home">
+            <img src="public/assets/logo.png" alt="">
+        </div>
+        <div class="welcome wrapper">
             <h1>Geoffrey Leung</h1>
             <h4>Web Developer</h4>
         </div>
@@ -34,16 +37,15 @@
             <h2>About Me</h2>
             <div class="aboutContent">
                 <div class="headshot">
-                    <img src="public/assets/profile1.jpg" alt="">
+                    <img src="public/assets/profile1.jpg" alt="Profile picture of Geoffrey">
                 </div>
-                <p>Who I am and what I do. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo porro sapiente fuga praesentium eveniet saepe, eos corrupti explicabo minima ullam ea soluta earum officia quos vel odio quas velit natus voluptatem maxime similique, doloribus reprehenderit quam corporis! Et ipsam, voluptas vitae est rerum illo possimus ut nostrum ipsa veritatis earum!</p>
+                <p>I'm Geoffrey, a web developer based in Toronto. With a previous background in accounting and finance, I have strong analytical senses and a passion for problem solving. I have found much enjoyment and excitement from coding with JavaScript and React, and I hope to create more projects in the future that users will find fun and useful. I work well in fast-paced environments and I am a quick and adaptable learner.</p>
             </div>
         </div>
     </section>
     <section class="skills overWrapper" id="skills">
         <div class="wrapper">
             <h2>My Skills</h2>
-            <p>Some of my competencies</p>
             <ul class="skillsList">
                 <li><h2><i class="devicon-javascript-plain"></i></h2></li>
                 <li><h2><i class="devicon-react-original-wordmark"></i></h2></li>
@@ -62,32 +64,46 @@
             <ul class="portfolioItems">
                 <li>
                     <div class="imageContainer">
-                        <img src="public/assets/randomize-mockup1.png" alt="">
+                        <img src="public/assets/randomize-mockup1.png" alt="Computer screen of Decision Maker application">
                     </div>
                     <div class="itemDescription">
                         <h4>Decision Maker</h4>
-                        <p>A decision maker app, because who carries around coins to flip anymore? Made using JavaScript and JQuery</p>
-                        <a href="">View Project</a>
+                        <p class="tools"><span>JavaScript</span>||<span>jQuery</span>||<span>HTML & CSS</span>||<span>Responsive Design</span></p>
+                        <p>A decision maker application that takes two inputed options and determines a single outcome based on a series of random choices.</p>
+                        <a href="http://geoffreyleung.com/decision-maker">View Project</a>
                     </div>
                 </li>
                 <li>
                     <div class="imageContainer">
-                        <img src="public/assets/discover-mockup1.png" alt="">
-                    </div>
-                    <div class="itemDescription">
-                        <h4>Discover Events</h4>
-                        <p>Utilizing Ticketmaster's Discovery API, generates a list of upcoming events based on the user's specified location and date. Created with JavaScript and JQuery.</p>
-                        <a href="">View Project</a>
-                    </div>
-                    </li>
-                <li>
-                    <div class="imageContainer">
-                        <img src="public/assets/slice-finder-mockup1.png" alt="">
+                        <img src="public/assets/slice-finder-mockup1.png" alt="Computer screen of Slice Finder application">
                     </div>
                     <div class="itemDescription">
                         <h4>Slice Finder</h4>
-                        <p>Drawing from Yelp's Fusion API, this app finds the top pizza restaurants in the user's specified location that serve by the slice. Made in React.</p>
-                        <a href="http://geoffreyleung.com/project6">View Project</a>
+                        <p class="tools"><span>React</span>||<span>APIs</span>||<span>JavaScript</span>||<span>HTML & CSS</span>||<span>Responsive Design</span></p>
+                        <p>Drawing from Yelp's Fusion API, this application finds the top pizza restaurants in the user's specified location that serve by the slice.</p>
+                        <a href="http://geoffreyleung.com/slice-finder">View Project</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="imageContainer">
+                        <img src="public/assets/discover-mockup1.png" alt="Computer screen of Discover Events application">
+                    </div>
+                    <div class="itemDescription">
+                        <h4>Discover Events</h4>
+                        <p class="tools"><span>JavaScript</span>||<span>jQuery</span>||<span>APIs</span>||<span>HTML & CSS</span>||<span>Responsive Design</span></p>
+                        <p>Utilizing Ticketmaster's Discovery API, this application generates a list of upcoming events based on the user's specified location and date.</p>
+                        <a href="http://geoffreyleung.com/discover-events">View Project</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="imageContainer">
+                        <img src="public/assets/coursea-mockup1.png" alt="Computer screen of Coursea webpage">
+                    </div>
+                    <div class="itemDescription">
+                        <h4>Coursea</h4>
+                        <p class="tools"><span>HTML & CSS</span>||<span>PSD</span>||<span>Sass</span>||<span>Responsive Design</span></p>
+                        <p>A fully responsive one page website created based on a previously designed PSD template mockup.</p>
+                        <a href="http://geoffreyleung.com/coursea">View Project</a>
                     </div>
                 </li>
             </ul>
@@ -96,18 +112,18 @@
     <section class="contact overWrapper" id="contact">
         <div class="contactContent wrapper">
             <h2>Contact Me</h2>
-                <form action="http://www.geoffreyleung.com/geoff@geoffreyleung.com" method="POST">
+                <form action="https://formspree.io/geoff@geoffreyleung.com" method="POST" id="contactForm">
                     <div class="formItem">
                         <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
+                        <input autocomplete="off" type="text" id="name" name="name">
                     </div>
                     <div class="formItem">
                         <label for="email">Email:</label>
-                        <input type="text" id="email" name="_replyto">
+                        <input autocomplete="off" type="email" id="email" name="_replyto">
                     </div>
                     <div class="formItem">
                         <label for="subject">Subject:</label>
-                        <input type="text" id="subject" name="subject">
+                        <input autocomplete="off" type="text" id="subject" name="subject">
                     </div>
                     <div class="formItem">
                         <label for="message">Message:</label>
@@ -115,18 +131,21 @@
                     </div>
                     <input type="submit" value="Send">
                 </form>
-            </div>
+        </div>
+        <div class="contactEmail">
             <h4><i class="fa fa-envelope"></i> Email</h4>
-            <p>geoff@geoffreyleung.com</p>
+            <a href="mailto:geoff@geoffreyleung.com">geoff@geoffreyleung.com</a>
+        </div>
     </section>
     <footer class="overWrapper">
         <div class="wrapper">
             <ul class="socialLinks">
-                <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa fa-linkedin"></i></a></li>
-                <li><a href=""><i class="fa fa-github"></i></a></li>
+                <li><a href="https://twitter.com/geoffrey_codes"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/geoffrey-kh-leung/"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/geoleung"><i class="fa fa-github"></i></a></li>
             </ul>
-            <p class="copyText">Design template by ThemeEggs on ThemeForest.</p>
+            <p class="copyText copyText1">Design template by ThemeEggs on ThemeForest.</p>
+            <p class="copyText copyText2">&copy; Geoffrey Leung 2017</p>
         </div>
     </footer>
     <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>

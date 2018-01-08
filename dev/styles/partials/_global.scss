@@ -19,7 +19,7 @@ nav a, label {
 }
 
 .wrapper {
-    width: 70%;
+    width: 75%;
     margin: 0 auto;
 }
 
@@ -38,13 +38,13 @@ ul {
     padding: 0;
 }
 
-@media (max-width: 615px) {
+@media (max-width: 670px) {
     .wrapper {
         width: 100%;
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 450px) {
     h2 {
         font-size: 4rem;
     }
