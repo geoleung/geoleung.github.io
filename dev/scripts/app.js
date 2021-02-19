@@ -54,6 +54,8 @@ $(function() {
         }, 1500);
     });
 
+    $('a[href^="http://geoffreyleung.com/hogwarts-central"]').attr('target', '_blank');
+    $('a[href^="http://geoffreyleung.com/shooting"]').attr('target', '_blank');
     $('a[href^="http://geoffreyleung.com/decision-maker"]').attr('target', '_blank');
     $('a[href^="http://geoffreyleung.com/discover-events"]').attr('target', '_blank');
     $('a[href^="http://geoffreyleung.com/slice-finder"]').attr('target', '_blank');

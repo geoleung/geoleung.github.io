@@ -3,7 +3,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url(/public/assets/background-top.jpg);
+    background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), url(/public/assets/background-top.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -11,7 +11,7 @@ main {
 .logoImage {
     position: absolute;
     top: 1%;
-    left: 15%;
+    left: 3%;
 }
 
 .logoImage img {
@@ -25,18 +25,18 @@ h1 {
 }
 
 .welcome h4 {
-    color: #666;
     font-size: 2.2rem;
     letter-spacing: .2em;
+}
+
+h1, .welcome h4 {
+    color: #EEE;
+    text-align: center;
 }
 
 @media (max-width: 670px) {
     .logoImage {
         left: 2%;
-    }
-
-    h1, .welcome h4 {
-        text-align: center;
     }
 }
 

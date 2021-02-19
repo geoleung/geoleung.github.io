@@ -9,6 +9,9 @@
 
 .headshot {
     width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .headshot img {
@@ -16,30 +19,47 @@
     border-radius: 10px;
 }
 
-.aboutContent p {
-    width: 70%;
+.aboutDescription {
+    width: 60%;
+    align-self: center;
+}
+
+.aboutDescription p {
     font-size: 1.8rem;
     line-height: 1.8;
-    align-self: center;
+    margin: 50px 0;
+    
+}
+
+@media (max-width: 1500px) {
+    .headshot {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1155px) {
+    .headshot {
+        width: 37%;
+    }
 }
 
 @media (max-width: 1010px) {
     .headshot {
-        width: 30%;
+        width: 42%;
     }
 
-    .aboutContent p {
-        width: 65%;
+    .aboutDescription {
+        width: 55%;
     }
 }
 
 @media (max-width: 935px) {
-    .headshot {
-        width: 35%;
-    }
+    // .headshot {
+    //     width: 35%;
+    // }
 
-    .aboutContent p {
-        width: 62%;
+    .aboutDescription {
+        width: 52%;
     }
 }
 
@@ -53,14 +73,18 @@
         width: 50%;
     }
 
-    .aboutContent p {
+    .aboutDescription {
+        width: auto;
+    }
+
+    .aboutDescription p {
         text-align: center;
         width: 100%;
     }
 }
 
-@media (max-width: 670px) {
-    .aboutContent p {
-        width: 90%;
-    }
-}
+// @media (max-width: 670px) {
+//     .aboutContent p {
+//         width: 90%;
+//     }
+// }
